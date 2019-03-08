@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navHome"
+            android:icon="@drawable/ic_home_black"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/navMyProfile"
+            android:icon="@drawable/ic_person_black"
+            android:title="@string/my_profile" />
+
+        <item
+            android:id="@+id/navMyOrgs"
+            android:icon="@drawable/ic_people_black"
+            android:title="@string/my_orgs" />
+        <item
+            android:id="@+id/navMyOrgEvents"
+            android:icon="@drawable/ic_event_black"
+            android:title="@string/my_org_events"
+            android:visible="false"
+            />
+        <item android:title="@string/student_orgs">
+            <menu>
+                <item
+                    android:id="@+id/navRecognizedOrgs"
+                    android:icon="@drawable/ic_check_box_black"
+                    android:title="@string/recognized_orgs"/>
+                <item
+                    android:id="@+id/navApplyForRecognition"
+                    android:icon="@drawable/ic_apply_recognition_black"
+                    android:title="@string/apply_for_recognition"/>
+                <item
+                    android:id="@+id/navRecognitionGuidelines"
+                    android:icon="@drawable/ic_guidelines_black"
+                    android:title="@string/recognition_guidelines"/>
+            </menu>
+        </item>
+
+    </group>
+
+</menu>

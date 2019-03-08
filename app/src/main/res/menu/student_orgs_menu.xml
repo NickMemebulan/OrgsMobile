@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/recognizedOrgs"
+        android:title="@string/recognized_orgs"/>
+    <item
+        android:id="@+id/applyForRecognition"
+        android:title="@string/apply_for_recognition"/>
+    <item
+        android:id="@+id/recognitionGuidelines"
+        android:title="@string/recognition_guidelines"/>
+</menu>

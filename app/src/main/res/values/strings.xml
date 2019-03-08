@@ -1,0 +1,178 @@
+<resources>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--Home Activity-->
+    <string name="app_name">Orgs Mobile</string>
+    <string name="up_logo">UP Logo</string>
+    <string name="osa_logo">OSA Logo</string>
+    <string name="osa_text">Office of Student Affairs</string>
+    <string name="up_text">University of the Philippines</string>
+    <string name="student_icon">Student Icon</string>
+    <!--Navigation Header-->
+    <string name="sign_in">LOG IN</string>
+    <string name="sign_out">LOG OUT</string>
+    <!--Home Event Handlers-->
+    <string name="event_title">Event Title</string>
+    <string name="event_date_time">Date and Time</string>
+    <string name="event_place">Location</string>
+    <string name="event_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non convallis tortor.</string>
+    <string name="event_organizer">Event Organizer</string>
+    <!--Icon PopupMenu-->
+    <string name="my_profile">My Profile</string>
+    <string name="my_orgs">My Orgs</string>
+    <string name="my_org_events">My Org Events</string>
+    <string name="logout">Logout</string>
+    <!--Student Orgs PopupMenu-->
+    <string name="recognized_orgs">Recognized Orgs</string>
+    <string name="apply_for_recognition">Apply for Recognition</string>
+    <string name="recognition_guidelines">Temp Link to Org Layout</string>
+    <!--ToolBar-->
+    <string name="home">Home</string>
+    <string name="student_orgs">Student Orgs</string>
+    <string name="login_button">LOG IN</string>
+
+    <!--Login Activity-->
+    <string name="reminder">REMINDERS</string>
+    <string name="up_mail">UP Mail</string>
+    <string name="password">Password</string>
+    <string name="sign_in_button">Sing-in</string>
+    <string name="title_activity_org_recognition">OrgRecognitionActivity</string>
+
+    <!--Org Recognition Activity-->
+    <string name="org_recog_requirements">Application for Organization Recognition</string>
+    <string name="requirements">Requirements</string>
+    <string name="requirements_desc">
+        The application for organization recognition is only during the First Semester of each academic year.All student organizations who would like to apply for recognition must meet the minimum requirements:
+    </string>
+    <string name="requirements_num">
+        1. Attendance of organization head to Leadership Training Seminar\n2. Must have at least 15 resident members (including officers)\n3. Must have one junior and one senior adviser\n4. Must have a constitution and by-laws/house rules
+    </string>
+    <string name="ensure">Student organizations recognized in the previous academic year must ensure that they have:</string>
+    <string name="ensure_num">1. Submitted all activity reports of all organization activities during the previous academic year\n2. Conducted at least one community service during the previous academic year</string>
+    <string name="new_vs_existing">New Organizations vs Existing Organizations</string>
+    <string name="nvs_desc_1">New organizations refer to student organizations who do not have organization records in the OSAM System regardless of their actual establishment date. Existing organizations are those who already have organization records in the OSAM System.</string>
+    <string name="nvs_desc_2">New organizations must secure a new organization key from SOAD before registering the organization online. Existing organizations must use their existing organization records in the OSAM System.</string>
+    <string name="point_person">Point Person</string>
+    <string name="point_person_desc_1">Only the point person of the student organization should apply for recognition. The point person is an internal appointment - the organization must simply appoint one person who will attend to the recognition requirements. For new organizations, the student who will enter the new organization key will serve as the organization\'s point person. To change point persons, the current point person can change it online.</string>
+    <string name="point_person_desc_2">In case the organization cannot change the point person, the organization may request for a change of point person by writing a letter to the Student Organizations and Activities Division. The letter must contain the student number of the old and the new point person as well as the reason for not being able to change the point person online.</string>
+    <string name="steps">Steps</string>
+    <string name="steps_num">1. Point persons must apply for recognition online by filling out the organization profile, advisers\' profile, and membership roster.\nPoint persons must have the following information of advisers: title (Mr./Ms./Engr./Prof./Dr.), employee number, full name, designation, department, college or office, address, mobile number, office number, email, and specialization. The following information of the members will also be needed by the point persons: student number, last name, and designation. Organizations will be prompted to upload the financial statement, organization logo, and latest copy of constitution and by-laws/house rules, if these were not yet uploaded previously.\n2. All members must login, update their OSAM profiles, and confirm their organization membership.\n3. Print, sign, and submit recognition forms.</string>
+    <string name="register_organization_button">REGISTER A NEW ORGANIZATION</string>
+    <string name="apply_recognition_button">APPLY FOR RECOGNITION</string>
+
+    <!--My Profile Activity-->
+    <string name="student_picture">Student Picture</string>
+    <!--Temporary, Need Dynamic-->
+    <string name="student_name">Student Name</string>
+    <string name="student_number">Student Number</string>
+    <string name="student_course">Student Course</string>
+    <string name="student_college">Student College</string>
+    <!---->
+    <!--Buttons-->
+    <string name="personal_info">Personal</string>
+    <string name="contact_info">Contact</string>
+    <string name="family_info">Family</string>
+    <string name="additional_info">Additional</string>
+    <!--Personal Information-->
+    <string name="nickname">Nickname</string>
+    <string name="talents">Talents, Skills, and Abilities</string>
+    <string name="religion">Religion</string>
+    <string name="nationality">Nationality</string>
+    <string name="birthplace">Birthplace</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="biological_sex">Biological Sex</string>
+    <string name="blood_type">Blood Type</string>
+    <!--Contact Information-->
+    <string name="college_address">College Address</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="region">Region</string>
+    <string name="mobile_device">Mobile Device</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="telephone_number">Telephone Number</string>
+    <string name="contact_person_name">Contact Person(Name)</string>
+    <string name="contact_person_number">Contact Person(Number)</string>
+    <string name="email_address">E-mail Address</string>
+    <string name="facebook_username_id">Facebook Username or ID</string>
+    <string name="twitter_username">Twitter Username</string>
+    <!--Family Information-->
+    <string name="mother_name">Mother\'s Name</string>
+    <string name="mother_education">Mothers\'s Education</string>
+    <string name="mother_work">Mother\'s Work</string>
+    <string name="mother_birthday">Mother\'s Birthday</string>
+    <string name="father_name">Father\'s Name</string>
+    <string name="father_education">Father\'s Name Education</string>
+    <string name="father_work">Father\'s Name Work</string>
+    <string name="father_birthday">Father\'s Name Birthday</string>
+    <string name="number_siblings">Number of Siblings</string>
+    <!--Additional Information-->
+    <string name="previous_college">Previous College</string>
+    <string name="previous_highschool">Previous HighSchool</string>
+    <string name="previous_elementary">Previous Elementary</string>
+    <string name="passport_number">Passport Number</string>
+    <string name="passport_expiration">Passport Expiration Date</string>
+    <string name="visa_type">Visa Type</string>
+    <string name="visa_expiration">Visa Expiration Date</string>
+    <string name="employer">Employer</string>
+    <string name="job_title">Job Title</string>
+    <!--Recognized Orgs Activity-->
+    <string name="list_of_recognized">List of Recognized Organizations</string>
+    <string name="univ_based">University-based Organizations</string>
+    <string name="ca_based">CA-based Organizations</string>
+    <string name="cas_based">CAS-based Organizations</string>
+    <string name="cdc_based">CDC-based Organizations</string>
+    <string name="ceat_based">CEAT-based Organizations</string>
+    <string name="cem_based">CEM-based Organizations</string>
+    <string name="cfnr_based">CFNR-based Organizations</string>
+    <string name="che_based">CHE-based Organizations</string>
+    <string name="cvm_based">CVM-based Organizations</string>
+    <string name="gs_based">GS-based Organizations</string>
+
+    <!--My Orgs Activity-->
+    <string name="my_organizations">My Organizations</string>
+    <string name="apply_recognition">Apply \nRecognition</string>
+    <string name="activity_forms">Activity Forms</string>
+
+    <string name="my_orgs_desc">This page lists contains organizations you are a member of. Click on the organization name to know more about your organization. If you do not see your organization below, contact your point person.</string>
+    <string name="apply_recog_desc">This page lists organizations you are the pointperson of. Click on an organization to process its recognition.</string>
+    <string name="act_forms_desc">These are the organizations you are a member of. You may only create permits or consent forms for organizations you are a member of. If you are a member and the organization is not in the list, then it means your organization is not recognized.</string>
+    <string name="title_activity_temp">TempActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Organization Template Tabs-->
+    <string name="organization_name">Organization Name</string>
+    <string name="org_manage">Manage Organization</string>
+    <string name="org_private">Private Profile</string>
+
+    <!--Organization Public Layout-->
+    <string name="org_established">Date of organization establishment.</string>
+    <string name="org_introduction">A basic introduction about the organization.</string>
+    <string name="org_activities">Activities</string>
+    <string name="org_membership">Membership</string>
+    <string name="org_membership_text">Latest number of members as of recent semester</string>
+    <string name="org_tambayan">Convergence Area (aka Tambayan)</string>
+    <string name="org_tambayan_text">Place where members meet</string>
+    <string name="org_recognized">Recognized</string>
+    <string name="org_recognized_text">Status of the recognition of the organization.</string>
+
+    <!--Organization Private Layout-->
+    <string name="org_status">Status</string>
+    <string name="org_status_text">It is where the point person and the point person\'s duties can be seen.</string>
+    <string name="org_officers">Officers</string>
+    <string name="org_advisers">Advisers</string>
+    <string name="org_members">Members</string>
+
+    <!--Manage Organization-->
+    <string name="create_activity_form"><u>Create an Activity Form</u></string>
+    <string name="update_members">Update Membership Roster</string>
+    <string name="update_org_profile">Update Organization Profile</string>
+    <string name="update_org_files">Update Organization Files</string>
+    <string name="update_advisers">Update Advisers</string>
+    <string name="chnage_point_person">Change Point Person</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
