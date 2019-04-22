@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Change Point Person-->
+    <string name="new_point_person">New Point Person</string>
+    <string name="student_number_askterisk">Student Number*</string>
+
+</resources>

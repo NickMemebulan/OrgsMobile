@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="please_certify">
+        Please certify on your honor that all your responses are accurate, correct, and complete.
+    </string>
+    <string name="students_reminded">
+        Students are reminded that this is a university facility and making a false statement of any material fact, 
+        or practicing or attempting to practice any deception or fraud shall be subjected to disciplinary action.
+    </string>
+    <string name="sign_confirmation">
+        As a sign of your confirmation, please type the following text in the text field below:
+    </string>
+    <string name="certify_honor">
+        I certify on my honor that my profile is accurate, correct, and complete.
+    </string>
+    <string name="confirmation">
+        Confirmation
+    </string>
+    <string name="save_profile">
+        Save Profile
+    </string>
+    <string name="confirmation_prompt">
+        Please type the confirmation text correctly.
+    </string>
+    <string name="successful_update">
+        Successfully updated student profile.
+    </string>
+</resources>

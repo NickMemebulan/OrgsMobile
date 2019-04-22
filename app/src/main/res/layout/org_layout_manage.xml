@@ -7,13 +7,13 @@
     tools:context=".OrgLayoutFragmentPublic"
     android:padding="16dp">
 
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/createActivityForm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/create_activity_form"
@@ -23,6 +23,7 @@
             android:textColor="@color/colorDirtyWhite" />
 
         <TextView
+            android:id="@+id/updateMembershipRoster"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/update_members"
@@ -32,6 +33,7 @@
             android:textColor="@color/colorDirtyWhite"/>
 
         <TextView
+            android:id="@+id/updateOrganizationProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/update_org_profile"
@@ -41,6 +43,7 @@
             android:textColor="@color/colorDirtyWhite"/>
 
         <TextView
+            android:id="@+id/updateOrganizationFiles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/update_org_files"
@@ -50,6 +53,7 @@
             android:textColor="@color/colorDirtyWhite"/>
 
         <TextView
+            android:id="@+id/updateAdvisers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/update_advisers"
@@ -59,9 +63,10 @@
             android:textColor="@color/colorDirtyWhite"/>
 
         <TextView
+            android:id="@+id/changePointPerson"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/chnage_point_person"
+            android:text="@string/change_point_person"
             android:textSize="22sp"
             android:padding="8dp"
             android:background="@drawable/maroon_box_white_border"

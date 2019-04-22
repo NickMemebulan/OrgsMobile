@@ -13,12 +13,18 @@
         android:layout_height="wrap_content"
         android:paddingBottom="8dp"
         android:orientation="vertical">
+
+        <!--<include
+            android:id="@+id/profileHeader"
+            layout="@layout/my_profile_header"/>-->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/college_address" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/contactCollegeAddress"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/college_address"/>
         <TextView
@@ -26,7 +32,8 @@
             android:layout_height="wrap_content"
             android:text="@string/permanent_address" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/contactPermanentAddress"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/permanent_address"/>
         <TextView
@@ -34,6 +41,7 @@
             android:layout_height="wrap_content"
             android:text="@string/region" />
         <EditText
+            android:id="@+id/contactRegion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/region"/>
@@ -42,7 +50,8 @@
             android:layout_height="wrap_content"
             android:text="@string/mobile_device" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/contactMobileDevice"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/mobile_device"/>
         <TextView
@@ -50,7 +59,8 @@
             android:layout_height="wrap_content"
             android:text="@string/mobile_number" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/contactMobileNumber"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/mobile_number"/>
         <TextView
@@ -58,7 +68,8 @@
             android:layout_height="wrap_content"
             android:text="@string/telephone_number" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/contactTelNumber"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/telephone_number"/>
         <TextView
@@ -66,7 +77,8 @@
             android:layout_height="wrap_content"
             android:text="@string/contact_person_name" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/contactConPersonName"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/contact_person_name"/>
         <TextView
@@ -74,7 +86,8 @@
             android:layout_height="wrap_content"
             android:text="@string/contact_person_number" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/contactConPersonNum"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/contact_person_number"/>
         <TextView
@@ -82,7 +95,8 @@
             android:layout_height="wrap_content"
             android:text="@string/email_address" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/contactEmailAdd"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/email_address"/>
         <TextView
@@ -90,7 +104,8 @@
             android:layout_height="wrap_content"
             android:text="@string/facebook_username_id" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/contactFbUserId"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/facebook_username_id"/>
         <TextView
@@ -98,7 +113,8 @@
             android:layout_height="wrap_content"
             android:text="@string/twitter_username" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/contactTwitterUser"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/twitter_username"/>
 

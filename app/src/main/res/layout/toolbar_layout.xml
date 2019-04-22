@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -38,12 +39,14 @@
             android:id="@+id/uplbTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/up_text"/>
+            android:text="@string/up_text"
+            android:textColor="@color/colorDirtyWhite"/>
         <TextView
             android:id="@+id/osaTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/osa_text"/>
+            android:text="@string/osa_text"
+            android:textColor="@color/colorDirtyWhite"/>
     </LinearLayout>
 
 

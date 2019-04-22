@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".UpdateOrgFilesActivity">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <include layout="@layout/toolbar_layout"/>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update_org_files"
+                android:textSize="24sp"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/dirty_white_background_gray_border">
+
+                    <TextView
+                        android:id="@+id/orgLogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/org_logo"
+                        android:textAllCaps="true"
+                        android:layout_alignBaseline="@+id/orgLogoChoose"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/org_logo_info"
+                        android:layout_below="@+id/orgLogoChoose"
+                        android:textColor="@color/colorBlack"/>
+                    <Button
+                        android:id="@+id/orgLogoChoose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/choose_jpg"
+                        android:padding="8dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorDirtyWhite"
+                        android:background="@color/colorMaroon"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/dirty_white_background_gray_border">
+
+                    <TextView
+                        android:id="@+id/orgConstitution"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/constitution"
+                        android:textAllCaps="true"
+                        android:layout_alignBaseline="@+id/constiChoose"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/constitution_info"
+                        android:layout_below="@+id/constiChoose"
+                        android:textColor="@color/colorBlack"/>
+                    <Button
+                        android:id="@+id/constiChoose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/choose_pdf"
+                        android:padding="8dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorDirtyWhite"
+                        android:background="@color/colorMaroon"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/dirty_white_background_gray_border">
+
+                    <TextView
+                        android:id="@+id/byLawsHouseRules"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/by_laws_house_rules"
+                        android:textAllCaps="true"
+                        android:layout_alignBaseline="@+id/byLawsChoose"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/by_laws_house_rules_info"
+                        android:layout_below="@+id/byLawsChoose"
+                        android:textColor="@color/colorBlack"/>
+                    <Button
+                        android:id="@+id/byLawsChoose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/choose_pdf"
+                        android:padding="8dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorDirtyWhite"
+                        android:background="@color/colorMaroon"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/dirty_white_background_gray_border">
+
+                <TextView
+                    android:id="@+id/finances"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/finances"
+                    android:textAllCaps="true"
+                    android:layout_alignBaseline="@+id/financesChoose"
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/finances_info"
+                    android:layout_below="@+id/financesChoose"
+                    android:textColor="@color/colorBlack"/>
+                <Button
+                    android:id="@+id/financesChoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_pdf"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorDirtyWhite"
+                    android:background="@color/colorMaroon"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_drawer_menu"/>
+
+</android.support.v4.widget.DrawerLayout>

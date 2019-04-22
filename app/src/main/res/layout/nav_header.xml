@@ -16,7 +16,7 @@
         android:contentDescription="@string/student_icon"
         android:paddingTop="32dp"
         android:paddingBottom="8dp"
-        app:srcCompat="@mipmap/ic_launcher_round" />
+        android:visibility="invisible"/>
 
     <TextView
         android:id="@+id/nav_header_nickname"
@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/nickname"
+        android:visibility="invisible"
         android:textColor="@color/colorWhite" />
 
     <Button

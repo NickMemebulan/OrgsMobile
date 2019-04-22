@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="12dp"
+    android:orientation="horizontal" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dirty_white_background_gray_border">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event_title"
+        android:id="@+id/homeEventTitle"/>
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeEventImage"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/homeEventDate"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event_date_time"
+        android:id="@+id/homeEventDate"
+        android:layout_below="@+id/homeEventOrganizer"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event_organizer"
+        android:id="@+id/homeEventOrganizer"
+        android:layout_below="@+id/homeEventTitle"/>
+
+</RelativeLayout>

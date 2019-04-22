@@ -26,9 +26,7 @@
                 android:layout_height="wrap_content"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-                <include
-                    android:id="@+id/profileToolbar"
-                    layout="@layout/toolbar_layout"/>
+                <include layout="@layout/toolbar_layout"/>
 
             </android.support.design.widget.AppBarLayout>
 
@@ -38,13 +36,15 @@
                 android:layout_height="wrap_content"
                 app:tabIndicatorColor="@color/colorSelect"
                 app:tabTextColor="@color/colorWhite"
-                android:background="@color/colorMaroon">
+                app:tabIndicatorHeight="8dp"
+                android:background="@color/colorMaroon"
+                android:visibility="gone">
 
                 <android.support.design.widget.TabItem
                     android:id="@+id/orgPublicTab"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/organization_name"/>
+                    android:text="@string/org_public"/>
 
                 <android.support.design.widget.TabItem
                     android:id="@+id/orgPrivateTab"
@@ -60,7 +60,7 @@
 
             </android.support.design.widget.TabLayout>
 
-            <android.support.v4.view.ViewPager
+            <com.example.nick.orgsmobile.ViewPagerDisabler
                 android:id="@+id/orgLayoutViewPager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

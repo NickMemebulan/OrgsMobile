@@ -13,12 +13,14 @@
         android:layout_height="match_parent"
         android:paddingBottom="8dp"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/previous_college" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/prevCollege"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/previous_college"/>
         <TextView
@@ -26,7 +28,8 @@
             android:layout_height="wrap_content"
             android:text="@string/previous_highschool" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/prevHighSchool"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/previous_highschool"/>
         <TextView
@@ -34,7 +37,8 @@
             android:layout_height="wrap_content"
             android:text="@string/previous_elementary" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/prevElementary"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/previous_elementary"/>
         <TextView
@@ -42,6 +46,7 @@
             android:layout_height="wrap_content"
             android:text="@string/passport_number" />
         <EditText
+            android:id="@+id/passport"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/passport_number"/>
@@ -50,6 +55,7 @@
             android:layout_height="wrap_content"
             android:text="@string/passport_expiration" />
         <EditText
+            android:id="@+id/passportExp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/passport_expiration"/>
@@ -58,6 +64,7 @@
             android:layout_height="wrap_content"
             android:text="@string/visa_type" />
         <EditText
+            android:id="@+id/visa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/visa_type"/>
@@ -66,6 +73,7 @@
             android:layout_height="wrap_content"
             android:text="@string/visa_expiration" />
         <EditText
+            android:id="@+id/visaExp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/visa_expiration"/>
@@ -74,7 +82,8 @@
             android:layout_height="wrap_content"
             android:text="@string/employer" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/employer"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/employer"/>
         <TextView
@@ -82,7 +91,8 @@
             android:layout_height="wrap_content"
             android:text="@string/job_title" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/jobTitle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/job_title"/>
 

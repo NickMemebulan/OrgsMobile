@@ -8,18 +8,14 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-    <android.support.design.widget.CoordinatorLayout
+    <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".TemplateEventLayout">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
 
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
@@ -32,25 +28,43 @@
 
         </android.support.design.widget.AppBarLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/event_title"
-            android:textSize="20sp"
-            android:textColor="@color/colorBlack"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginBottom="16dp"/>
+            app:tabIndicatorColor="@color/colorSelect"
+            app:tabIndicatorHeight="8dp"
+            app:tabTextColor="@color/colorWhite"
+            android:background="@color/colorMaroon">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/temp_photo"/>
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event" />
 
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabAttendees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendees" />
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/eventViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
-    </android.support.design.widget.CoordinatorLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_drawer_menu"/>
 
 </android.support.v4.widget.DrawerLayout>

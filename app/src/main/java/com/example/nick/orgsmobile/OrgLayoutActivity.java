@@ -12,90 +12,176 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class OrgLayoutActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener{
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
-    private ImageView NavOpener;
-    private DrawerLayout mDrawer;
-    private ActionBarDrawerToggle toggler;
-    private NavigationView navigationView;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class OrgLayoutActivity extends DrawerAndToolbarClass{
+
     private TabLayout tabLayout;
     private TabItem orgPublicTab;
     private TabItem orgPrivateTab;
     private TabItem manageOrgTab;
-    private ViewPager orgLayoutViewPager;
+    private ViewPagerDisabler orgLayoutViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.org_layout_activity);
 
-        NavOpener = (ImageView)findViewById(R.id.navOpener);
+        displayDrawer();
 
-        mDrawer = (DrawerLayout)findViewById(R.id.drawer_layout);
-
-        toggler = new ActionBarDrawerToggle(
-                this, mDrawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        mDrawer.addDrawerListener(toggler);
-        toggler.syncState();
-
-        navigationView = (NavigationView)findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-
-        NavOpener.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mDrawer.openDrawer(GravityCompat.START);
-            }
-        });
-
-        tabLayout = (TabLayout)findViewById(R.id.tabLayout);
+        /*tabLayout = (TabLayout)findViewById(R.id.tabLayout);
         orgPublicTab = (TabItem)findViewById(R.id.orgPublicTab);
         orgPrivateTab = (TabItem)findViewById(R.id.orgPrivateTab);
         manageOrgTab = (TabItem)findViewById(R.id.manageOrgTab);
-        orgLayoutViewPager = (ViewPager)findViewById(R.id.orgLayoutViewPager);
+        orgLayoutViewPager = findViewById(R.id.orgLayoutViewPager);
 
         OrgLayoutPageAdapter pageAdapter = new OrgLayoutPageAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         orgLayoutViewPager.setAdapter(pageAdapter);
         orgLayoutViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                orgLayoutViewPager.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });*/
+
+        String orgid = getIntent().getStringExtra("orgid");
+        getOrgProfile(orgid);
+
     }
 
     @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
+    protected void onResumeFragments() {
+        super.onResumeFragments();
+        String orgid = getIntent().getStringExtra("orgid");
+        getOrgProfile(orgid);
     }
 
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
+    protected void getOrgProfile(final String orgid){
+        final JSONObject[] json = new JSONObject[1];
+        final String[] pointperson = new String[1];
+        String url = "https://uplbosa.org/apitest/org/profile";
+        RequestQueue queue = Volley.newRequestQueue(this);
+        StringRequest myJsonRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d("Response", response);
+                        try {
+                            json[0] = new JSONObject(response);
+                            pointperson[0] = json[0].get("pointperson_id").toString();
+                            /*Log.d("PointPerson", pointperson);
+                            Log.d("UserID",AccountLoggedIn.getUserID());*/
 
-        if (id == R.id.navHome) {
-            NavUtils.navigateUpFromSameTask(this);
-        } else if (id == R.id.navMyOrgs){
-            Intent myOrgsIntent = new Intent(OrgLayoutActivity.this, MyOrgsActivity.class);
-            startActivity(myOrgsIntent);
-        } else if (id == R.id.navRecognizedOrgs) {
-            Intent recognizedOrgsIntent = new Intent(OrgLayoutActivity.this, RecognizedOrgsActivity.class);
-            startActivity(recognizedOrgsIntent);
-        } else if (id == R.id.navApplyForRecognition) {
-            Intent applyForRecognitionIntent = new Intent(OrgLayoutActivity.this, OrgRecognitionActivity.class);
-            startActivity(applyForRecognitionIntent);
-        } else if (id == R.id.navRecognitionGuidelines) {
-            Toast.makeText(OrgLayoutActivity.this, "" + item.getTitle(), Toast.LENGTH_SHORT).show();
-            return true;
-        }
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
+
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                },
+                new Response.ErrorListener(){
+                    @Override
+                    public void onErrorResponse(VolleyError error){
+                        Log.d("Error.Response", error.toString());
+                        Toast.makeText(OrgLayoutActivity.this, "No Internet Connection", Toast.LENGTH_SHORT).show();
+
+                    }
+                }
+        ){
+            @Override
+            protected Map<String,String> getParams(){
+                Map<String,String> params = new HashMap<String, String>();
+                params.put("token","4p1t3st");
+                params.put("orgid", orgid);
+                return params;
+            }
+
+            @Override
+            protected void onFinish() {
+                if(AccountLoggedIn.getUserID()!=null && pointperson[0].equals(AccountLoggedIn.getUserID())){
+                    tabLayout.setVisibility(View.VISIBLE);
+                    orgLayoutViewPager.setSwipeDisabler(true);
+                }
+                ActiveOrganizationActivity.setActiveOrg(json[0]);
+
+                CreateFragments();
+
+
+            }
+        };
+        queue.add(myJsonRequest);
     }
+
+    public void CreateFragments(){
+        tabLayout = (TabLayout)findViewById(R.id.tabLayout);
+        orgPublicTab = (TabItem)findViewById(R.id.orgPublicTab);
+        orgPrivateTab = (TabItem)findViewById(R.id.orgPrivateTab);
+        manageOrgTab = (TabItem)findViewById(R.id.manageOrgTab);
+        orgLayoutViewPager = findViewById(R.id.orgLayoutViewPager);
+
+        OrgLayoutPageAdapter pageAdapter = new OrgLayoutPageAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
+        orgLayoutViewPager.setAdapter(pageAdapter);
+        orgLayoutViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                orgLayoutViewPager.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+    }
+
+    /*@Override
+    protected void onResume() {
+        super.onResume();
+        String orgid = null;
+        if(ActiveOrganizationActivity.getActiveOrg() != null){
+            try {
+                orgid = ActiveOrganizationActivity.getActiveOrg().get("orgid").toString();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            getOrgProfile(orgid);
+        }
+    }*/
 }

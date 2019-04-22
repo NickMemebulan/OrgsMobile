@@ -6,7 +6,8 @@
     <color name="colorSelect">#094424</color>
     <color name="colorGreen">#014421</color>
     <color name="colorMaroon">#800000</color>
-    <color name="colorWhite">#FFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#DBDBDB</color>
     <color name="colorDirtyWhite">#eaeaea</color>
     <color name="colorBlack">#000</color>
 </resources>

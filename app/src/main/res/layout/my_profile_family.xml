@@ -13,12 +13,18 @@
         android:layout_height="match_parent"
         android:paddingBottom="8dp"
         android:orientation="vertical">
+
+        <!--<include
+            android:id="@+id/profileHeader"
+            layout="@layout/my_profile_header"/>-->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mother_name" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/motherName"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/mother_name"/>
         <TextView
@@ -26,7 +32,8 @@
             android:layout_height="wrap_content"
             android:text="@string/mother_education" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/motherEduc"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/mother_education"/>
         <TextView
@@ -34,7 +41,8 @@
             android:layout_height="wrap_content"
             android:text="@string/mother_work" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/motherWork"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/mother_work"/>
         <TextView
@@ -42,7 +50,8 @@
             android:layout_height="wrap_content"
             android:text="@string/mother_birthday" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/motherBday"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/mother_birthday"/>
         <TextView
@@ -50,7 +59,8 @@
             android:layout_height="wrap_content"
             android:text="@string/father_name" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/fatherName"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/father_name"/>
         <TextView
@@ -58,7 +68,8 @@
             android:layout_height="wrap_content"
             android:text="@string/father_education" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/fatherEduc"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/father_education"/>
         <TextView
@@ -66,7 +77,8 @@
             android:layout_height="wrap_content"
             android:text="@string/father_work" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/fatherWork"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/father_work"/>
         <TextView
@@ -74,7 +86,8 @@
             android:layout_height="wrap_content"
             android:text="@string/father_birthday" />
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/fatherBday"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/father_birthday"/>
         <TextView
@@ -82,6 +95,7 @@
             android:layout_height="wrap_content"
             android:text="@string/number_siblings" />
         <EditText
+            android:id="@+id/totalSiblings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/number_siblings"/>

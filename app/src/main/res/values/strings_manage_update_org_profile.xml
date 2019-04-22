@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Update Organization Profile-->
+    <string name="update_organization">Update Organization</string>
+    <string name="org_id">Org ID [?]</string>
+    <string name="org_id_info">Your Organization ID is the unique identifier of your student organization</string>
+    <string name="official_org_name">Official Name of the Organization [?]</string>
+    <string name="official_org_name_info">If this is incorrect, please visit the Communication and Information Technology (COMMIT)</string>
+    <string name="org_username">Org Username [?]</string>
+    <string name="org_username_info">Your organization username will allow public organization page to be accessible via
+    www.uplbosa.org/your_username. Your username will always start with \'up\' followed by your short name. If you are an old
+    organization wihtout a username, please drop by COMMIT. Changing your org username is not allowed.</string>
+    <string name="short_name">Short Name*</string>
+    <string name="org_nicknames">Other Organization Nicknames</string>
+    <string name="org_type">Organization Type*</string>
+    <string name="college_assignment">College Assignment</string>
+    <string name="date_established">Date Established*</string>
+    <string name="sec_registration">SEC Registration [?]</string>
+    <string name="sec_registration_info">Indicate the date your organization was registered to the Securities and Exchange Commission.
+    If you are not yet registered, you can indicate your target date of registration or leave blank if there is still no plan.</string>
+    <string name="org_email">Organization Email [?]*</string>
+    <string name="org_email_info">Enter an email address OSA can use to contact your organization</string>
+    <string name="mailing_address">Mailing Address*</string>
+    <string name="tambayan_address">Tambayan Address*</string>
+    <string name="general_assembly_schedule">General Assembly Schedule*</string>
+    <string name="website">Website</string>
+    <string name="youtube_introduce">Youtube video that can introduce your organization</string>
+    <string name="facebook_username">Facebook Username</string>
+    <!--<string name="twitter_username">Twitter Username</string>-->
+    <string name="mission">Mission*</string>
+    <string name="vision">Vision*</string>
+    <string name="objectives">Objectives*</string>
+    <string name="brief_description">Brief Description*</string>
+</resources>

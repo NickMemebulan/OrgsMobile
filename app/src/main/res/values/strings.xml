@@ -20,6 +20,7 @@
     <!--Icon PopupMenu-->
     <string name="my_profile">My Profile</string>
     <string name="my_orgs">My Orgs</string>
+    <string name="my_qr_code">My QR Code</string>
     <string name="my_org_events">My Org Events</string>
     <string name="logout">Logout</string>
     <!--Student Orgs PopupMenu-->
@@ -100,9 +101,9 @@
     <string name="mother_work">Mother\'s Work</string>
     <string name="mother_birthday">Mother\'s Birthday</string>
     <string name="father_name">Father\'s Name</string>
-    <string name="father_education">Father\'s Name Education</string>
-    <string name="father_work">Father\'s Name Work</string>
-    <string name="father_birthday">Father\'s Name Birthday</string>
+    <string name="father_education">Father\'s Education</string>
+    <string name="father_work">Father\'s Work</string>
+    <string name="father_birthday">Father\'s Birthday</string>
     <string name="number_siblings">Number of Siblings</string>
     <!--Additional Information-->
     <string name="previous_college">Previous College</string>
@@ -116,6 +117,8 @@
     <string name="job_title">Job Title</string>
     <!--Recognized Orgs Activity-->
     <string name="list_of_recognized">List of Recognized Organizations</string>
+    <string name="group_by">Group By</string>
+    <!--College-->
     <string name="univ_based">University-based Organizations</string>
     <string name="ca_based">CA-based Organizations</string>
     <string name="cas_based">CAS-based Organizations</string>
@@ -126,6 +129,17 @@
     <string name="che_based">CHE-based Organizations</string>
     <string name="cvm_based">CVM-based Organizations</string>
     <string name="gs_based">GS-based Organizations</string>
+    <!--Type-->
+    <string name="academic_based">Academic Organizations</string>
+    <string name="cultural_based">Cultural Organizations</string>
+    <string name="fraternities_based">Fraternities</string>
+    <string name="international_based">International Organizations</string>
+    <string name="political_based">Political Organizations</string>
+    <string name="religious_based">Religious Organizations</string>
+    <string name="socio_civic_based">Socio-Civic Organizations</string>
+    <string name="sororities_based">Sororities</string>
+    <string name="sports_recreational_based">Sports and Recreational Organizations</string>
+    <string name="varsitarian_based">Varsitarian Organizations</string>
 
     <!--My Orgs Activity-->
     <string name="my_organizations">My Organizations</string>
@@ -143,12 +157,14 @@
 
     <!--Organization Template Tabs-->
     <string name="organization_name">Organization Name</string>
+    <string name="org_public">Public Profile</string>
     <string name="org_manage">Manage Organization</string>
     <string name="org_private">Private Profile</string>
 
     <!--Organization Public Layout-->
     <string name="org_established">Date of organization establishment.</string>
     <string name="org_introduction">A basic introduction about the organization.</string>
+    <string name="org_website">Organization Website</string>
     <string name="org_activities">Activities</string>
     <string name="org_membership">Membership</string>
     <string name="org_membership_text">Latest number of members as of recent semester</string>
@@ -165,14 +181,41 @@
     <string name="org_members">Members</string>
 
     <!--Manage Organization-->
-    <string name="create_activity_form"><u>Create an Activity Form</u></string>
+    <string name="create_activity_form">Create an Activity Form</string>
     <string name="update_members">Update Membership Roster</string>
     <string name="update_org_profile">Update Organization Profile</string>
     <string name="update_org_files">Update Organization Files</string>
     <string name="update_advisers">Update Advisers</string>
-    <string name="chnage_point_person">Change Point Person</string>
+    <string name="change_point_person">Change Point Person</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <!--Create Activity Form-->
+    <string name="title_of_activity">Title of Activity</string>
+    <string name="activity_classification">Activity Classification</string>
+    <string name="activity_description">Activity Description</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="deadline_reminder">Deadline of submission of signed activity forms is seven(7) days before the activity.
+    Please ensure that the date in the activity form that you will generate is correct because it cannot be changed.</string>
+    <string name="from_time">From Time</string>
+    <string name="to_time">To Time</string>
+    <string name="time_reminder">Please verify the time you indicate is correct. Verify that AM or PM is indicated or that
+    you are using the 24-hour clock on your web browser.</string>
+    <string name="venue">Venue</string>
+    <string name="specific_venue">Specific Venue</string>
+    <string name="activity_poster_url">Activity Poster or URL</string>
+    <string name="purpose">Purpose - Why are you conducting this activity</string>
+    <string name="junior_adviser">Junior Adviser</string>
+    <string name="senior_adviser">Senior Adviser</string>
+    <string name="understand_agreement">I understand that the form  with signatures of the head and advisers including all
+    attachments at the lower left must be submitted to SOAD before the deadlines. I understand that the deadline is seven (7) days
+    before the activity regardless of how late we planned the activity and the whereabouts of the signatories. As a sign that you
+    understand this paragraph, please put the text "I understand" in the box below.</string>
+    <string name="generate_form">Generate Form</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="connect">Connect</string>
+    <string name="save">Save</string>
+    <string name="post">Post</string>
 
 </resources>

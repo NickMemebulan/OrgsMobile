@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nick.orgsmobile">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:exported="true"
+        android:icon="@drawable/osa_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/osa_logo"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TemplateEventLayout"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MyQRCodeActivity"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DrawerAndToolbarClass"
+            android:launchMode="singleInstance" />
         <activity
             android:name=".LoginActivity"
             android:parentActivityName=".MainActivity" />
@@ -31,8 +42,36 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".RecognizedOrgsActivity"
+            android:launchMode="singleInstance"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".OrgLayoutActivity" />
+        <activity
+            android:name=".OrgLayoutActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ManageChangePointPerson"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ManageUpdateAdvisers"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ManageUpdateOrgFiles"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ManageUpdateOrgProfile"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ManageUpdateMembers"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ManageCreateActivityForm"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TemplateEventLayout"
+            android:parentActivityName=".MainActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
     </application>
 
 </manifest>

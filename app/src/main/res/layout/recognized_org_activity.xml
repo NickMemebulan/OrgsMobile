@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    >
+    android:fitsSystemWindows="true">
     <!--tools:openDrawer="start"-->
-    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".RecognizedOrgsActivity">
@@ -32,6 +30,7 @@
             app:layout_constraintTop_toBottomOf="@+id/recognizedToolbar" />
 
         <LinearLayout
+            android:id="@+id/college_based"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -40,9 +39,9 @@
             android:layout_marginRight="8dp"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/listHeaderTextView">
+            app:layout_constraintTop_toBottomOf="@+id/groupByButton">
 
             <TextView
                 android:id="@+id/univBasedOrgs"
@@ -72,7 +71,7 @@
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/csBasedOrgs"
+                android:id="@+id/casBasedOrgs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -175,6 +174,166 @@
                 android:text="@string/gs_based"
                 android:textSize="16sp" />
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/type_based"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/groupByButton">
+
+            <TextView
+                android:id="@+id/academicBased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/square"
+                android:padding="8dp"
+                android:text="@string/academic_based"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/culturalBased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/square"
+                android:padding="8dp"
+                android:text="@string/cultural_based"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fraternityBased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/square"
+                android:padding="8dp"
+                android:text="@string/fraternities_based"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/internationalBased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/square"
+                android:padding="8dp"
+                android:text="@string/international_based"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/politicalBased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/square"
+                android:padding="8dp"
+                android:text="@string/political_based"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/religiousBased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/square"
+                android:padding="8dp"
+                android:text="@string/religious_based"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/socioCivicBased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/square"
+                android:padding="8dp"
+                android:text="@string/socio_civic_based"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sororityBased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/square"
+                android:padding="8dp"
+                android:text="@string/sororities_based"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sportsRecreationalBased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/square"
+                android:padding="8dp"
+                android:text="@string/sports_recreational_based"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/varsitarianBased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/square"
+                android:padding="8dp"
+                android:text="@string/varsitarian_based"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/groupByButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/group_by"
+            android:background="@color/colorMaroon"
+            android:textColor="@color/colorDirtyWhite"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintStart_toStartOf="@+id/listHeaderTextView"
+            app:layout_constraintTop_toBottomOf="@+id/listHeaderTextView" />
 
     </android.support.constraint.ConstraintLayout>
 

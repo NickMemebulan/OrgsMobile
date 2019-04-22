@@ -7,7 +7,6 @@
     tools:context=".OrgLayoutFragmentPublic"
     android:padding="16dp">
 
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,8 +18,9 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:id="@+id/orgLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:src="@drawable/ic_org_icon_handler"/>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -30,31 +30,49 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/orgName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/organization_name"
-                    android:textSize="28sp"/>
+                    android:textSize="24sp"/>
 
                 <TextView
+                    android:id="@+id/orgEstablished"
                     android:paddingTop="16dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="8dp"
                     android:text="@string/org_established"/>
 
                 <TextView
+                    android:id="@+id/orgWebsite"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/org_introduction"/>
+                    android:text="@string/org_website"
+                    android:padding="8dp"/>
 
             </LinearLayout>
 
         </LinearLayout>
 
         <TextView
+            android:id="@+id/orgDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/org_introduction"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/org_activities"
             android:textSize="22sp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/orgActivities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:padding="8dp"/>
 
         <TextView
@@ -65,9 +83,9 @@
             android:padding="8dp"/>
 
         <TextView
+            android:id="@+id/orgMembership"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/org_membership_text"
             android:padding="8dp"/>
 
         <TextView
@@ -78,6 +96,7 @@
             android:padding="8dp"/>
 
         <TextView
+            android:id="@+id/orgTambayan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/org_tambayan_text"

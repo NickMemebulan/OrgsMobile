@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Update Organization Files-->
+    <string name="org_logo">Org Logo</string>
+    <string name="org_logo_info">Upload a high resolution copy of your organization logo below. Your logo cannot exceed 2MB.</string>
+    <string name="choose_jpg">Choose JPG File</string>
+    <string name="constitution">Constitution</string>
+    <string name="constitution_info">Upload a PDF file of your constitution. The file cannot exceed 2MB.</string>
+    <string name="choose_pdf">Choose PDF File</string>
+    <string name="by_laws_house_rules">By-Laws//House Rules</string>
+    <string name="by_laws_house_rules_info">Upload a PDF file of your by-laws/house rules. The file cannot exceed 2MB.</string>
+    <string name="finances">Finances</string>
+    <string name="finances_info">Upload PDF file of your financial statement for the previous academic year.
+    Your statement must contain itemized income/expenses for each organization activity and the organization\'s total cash on hand.
+    The PDF file cannot exceed 2MB.</string>
+
+</resources>

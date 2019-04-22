@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Update Membership Roster-->
+    <string name="update_roster">Update Roster</string>
+    <string name="new_member">New Member</string>
+    <string name="list_confirmed">List of Confirmed Members</string>
+    <string name="list_unconfirmed">List of Unconfirmed Members</string>
+    <!--<string name="student_number">Student Number</string>-->
+    <string name="name">Name</string>
+    <string name="designation">Designation</string>
+    <string name="action">Action</string>
+</resources>

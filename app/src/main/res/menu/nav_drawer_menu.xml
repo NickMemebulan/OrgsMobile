@@ -13,12 +13,20 @@
         <item
             android:id="@+id/navMyProfile"
             android:icon="@drawable/ic_person_black"
-            android:title="@string/my_profile" />
+            android:title="@string/my_profile"
+            android:visible="false"/>
 
         <item
             android:id="@+id/navMyOrgs"
             android:icon="@drawable/ic_people_black"
-            android:title="@string/my_orgs" />
+            android:title="@string/my_orgs"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/navMyQRCode"
+            android:icon="@drawable/ic_qr_code_icon"
+            android:title="@string/my_qr_code"
+            android:visible="false"/>
         <item
             android:id="@+id/navMyOrgEvents"
             android:icon="@drawable/ic_event_black"
@@ -38,7 +46,8 @@
                 <item
                     android:id="@+id/navRecognitionGuidelines"
                     android:icon="@drawable/ic_guidelines_black"
-                    android:title="@string/recognition_guidelines"/>
+                    android:title="@string/recognition_guidelines"
+                    android:visible="false"/>
             </menu>
         </item>
 

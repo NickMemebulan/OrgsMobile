@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Update Organization Advisers-->
+    <string name="new_adviser">New Adviser</string>
+    <string name="list_jr_sr_adviser">List of Junior and Senior Advisers</string>
+    <string name="adviser_name">Adviser Name</string>
+    <string name="type">Type</string>
+    <!--<string name="designation">Designation</string>-->
+    <string name="unit">Unit</string>
+    <string name="edit">Edit</string>
+
+
+</resources>

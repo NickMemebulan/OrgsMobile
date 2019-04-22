@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".UpdateAdviserActivity">
+
+            <include layout="@layout/toolbar_layout"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update_advisers"
+                android:layout_margin="8dp"
+                android:textSize="24sp"
+                android:textColor="@color/colorBlack"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/new_adviser"
+                android:background="@color/colorMaroon"
+                android:textColor="@color/colorDirtyWhite"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/dirty_white_background_gray_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/list_jr_sr_adviser"
+                    android:textColor="@color/colorBlack"
+                    android:textAllCaps="true"
+                    android:layout_margin="8dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/adviserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/adviser_name"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit"
+                        android:layout_alignParentRight="true"/>
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/type"
+                        android:layout_below="@+id/adviserName"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/designation"
+                        android:layout_below="@+id/adviserName"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unit"
+                        android:layout_below="@id/adviserName"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:paddingTop="8dp"
+                        android:id="@+id/juniorAdviserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/adviser_name"/>
+
+                    <ImageButton
+                        android:id="@+id/juniorAdviserEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/juniorAdviserDelete"
+                        android:layout_alignTop="@+id/juniorAdviserName"
+                        android:src="@drawable/ic_edit_button"
+                        android:backgroundTint="@color/colorMaroon"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/juniorAdviserDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/juniorAdviserName"
+                        android:src="@drawable/ic_delete_button"
+                        android:backgroundTint="@color/colorMaroon"
+                        />
+
+                    <TextView
+                        android:id="@+id/juniorAdviserType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/type"
+                        android:layout_below="@+id/juniorAdviserEdit"/>
+
+                    <TextView
+                        android:id="@+id/juniorAdviserDesignation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/designation"
+                        android:layout_below="@+id/juniorAdviserEdit"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/juniorAdviserUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unit"
+                        android:layout_below="@id/juniorAdviserEdit"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:paddingTop="8dp"
+                        android:id="@+id/seniorAdviserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/adviser_name"/>
+
+                    <ImageButton
+                        android:id="@+id/seniorAdviserEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/seniorAdviserDelete"
+                        android:layout_alignTop="@+id/seniorAdviserName"
+                        android:src="@drawable/ic_edit_button"
+                        android:backgroundTint="@color/colorMaroon"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/seniorAdviserDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/seniorAdviserName"
+                        android:src="@drawable/ic_delete_button"
+                        android:backgroundTint="@color/colorMaroon"
+                        />
+
+                    <TextView
+                        android:id="@+id/seniorAdviserType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/type"
+                        android:layout_below="@+id/seniorAdviserEdit"/>
+
+                    <TextView
+                        android:id="@+id/seniorAdviserDesignation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/designation"
+                        android:layout_below="@+id/seniorAdviserEdit"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/seniorAdviserUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unit"
+                        android:layout_below="@id/seniorAdviserEdit"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_drawer_menu"/>
+
+</android.support.v4.widget.DrawerLayout>
